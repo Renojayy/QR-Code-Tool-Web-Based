@@ -199,10 +199,15 @@ function h(string $s): string
 </head>
 <body>
 <div class="wrap">
-
+<?php if (file_exists('C:/xampp/htdocs/QRScanning Tool/image.jpg')): ?>
+    <div class="image-container">
+        <img src="image.jpg" alt="Description of the image" style="max-width: 100%; height: auto;">
+    </div>
+<?php endif; ?>
   <header>
     <h1>WiFi QR Code Generator</h1>
     <p>Scan the code with a phone camera and join your hotspot instantly, with no typing.</p>
+
   </header>
 
   <div class="grid">
